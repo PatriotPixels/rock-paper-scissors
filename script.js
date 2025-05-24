@@ -47,4 +47,14 @@ function playRound(humanChoice, computerChoice) {
     const looseMessage = 'You loose!'
 }
 
+function playGame() {
+    playRound++
+    if (playRound === 5) {
+        if (humanScore > computerScore) {
+            print('You win best out of 5!')
+        } else {
+            print('You lost best out of 5!')
+        }
+    }
+}
 
