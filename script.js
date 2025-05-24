@@ -24,6 +24,27 @@ let humanScore;
 let computerScore;
 
 function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase
+    computerChoice = getComputerChoice
 
+    if (humanChoice === computerChoice) {
+        print('Its a tie!')
+
+    } else if (humanChoice === 'rock' && computerChoice === 'scissors') {
+        print(winMessage)
+        humanScore++
+    } else if (humanChoice === 'paper' && computerChoice === 'rock') {
+        print(winMessage)
+        humanScore++
+    } else if (humanChoice === 'scissors' && computerChoice === 'paper') {
+        print(winMessage)
+        humanScore++
+    } else {
+        print(looseMessage)
+        computerScore++
+    }
+    const winMessage = 'You Win!';
+    const looseMessage = 'You loose!'
 }
+
 
